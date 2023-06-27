@@ -1,0 +1,47 @@
+.second-page__container {
+    padding: 180px 15px 0px 15px;
+}
+
+.second-page__body {
+    display: grid;
+    grid-template-columns: 57.398374% 32.926829%;
+    justify-content: space-between;
+
+}
+
+.second-page__article {
+    padding-bottom: 26px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-page__titlebox {
+    margin-bottom: 40px;
+}
+
+.second-page__list {
+    margin-bottom: 22px;
+    display: grid;
+    row-gap: 12px;
+}
+
+.second-page__list li {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+    color: #424551;
+    line-height: 26px;
+}
+
+.second-page__list li::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url('../img/check.svg') center / cover no-repeat;
+    flex-shrink: 0;
+}
+
+.second-page__button span {
+    padding: 16px 32px;
+}

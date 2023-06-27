@@ -1,0 +1,99 @@
+[class*="__container"] {
+    max-width: 1260px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    position: relative;
+    z-index: 20;
+}
+
+.button {
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    border-radius: 4px;
+    line-height: 20px;
+    display: inline-block;
+    font-weight: 700;
+    color: #ffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.button span {
+    padding: 16px 40px;
+    display: block;
+    background: transparent;
+    transition: all 0.7s linear 0s;
+    position: relative;
+    z-index: 10;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+}
+
+.button:hover span {
+    color: #ffff;
+    background: #FF3F3A;
+    text-shadow: 1px 1px 2px #00000057, -1px -1px 2px #00000057, 1px -1px 2px #00000057, -1px 1px 2px #00000057;
+    box-shadow: inset 1px 1px 2px #00000057, inset -1px -1px 2px #00000057, inset 1px -1px 2px #00000057, inset -1px 1px 2px #00000057;
+}
+
+.button--transparent {
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%) top left / 100% 1px no-repeat, linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%) bottom left / 100% 1px no-repeat;
+    color: #FF3F3A;
+}
+
+.button::before,
+.button::after {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 100%;
+    top: 0px;
+    transition: color 1s linear 0s;
+    z-index: 5;
+}
+
+.button::before {
+    left: 0px;
+    border: 1px solid #FF3F3A;
+    border-right: none;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.button::after {
+    right: 0px;
+    border: 1px solid #F75E05;
+    border-left: none;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.titlebox {
+    color: #1E212C;
+}
+
+.titlebox>*:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+}
+
+.title {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 60px;
+}
+
+.actionbox {
+    display: flex;
+    column-gap: 24px;
+}

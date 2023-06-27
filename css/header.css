@@ -1,0 +1,70 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.header__body {
+    display: flex;
+    column-gap: 60px;
+    align-items: center;
+    color: #424551;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 20px 0px;
+}
+
+.header__logo {
+    flex-shrink: 0;
+}
+
+.header__menu {
+    flex-grow: 1;
+}
+
+.header__menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    line-height: 20px;
+
+}
+
+.header__menu li {
+    transition: all 0.5s linear 0s;
+}
+
+.header__log-in:hover,
+.header__menu li:hover {
+    color: #FF3F3A;
+    text-shadow: 1px 1px 2px #00000057, -1px -1px 2px #00000057;
+}
+
+.header__action {
+    display: flex;
+    column-gap: 36px;
+    align-items: center;
+}
+
+.header__button {
+    flex-shrink: 0;
+}
+
+.header__log-in {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    transition: all 0.5s linear 0s;
+}
+
+.header__log-in::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url('../img/Person.svg') center / cover no-repeat;
+    flex-shrink: 0;
+}
+
+.header__log-in:hover::before {
+    background: url('../img/personhover.svg') center / cover no-repeat;
+}
